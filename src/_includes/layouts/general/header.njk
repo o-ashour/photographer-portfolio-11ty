@@ -23,7 +23,7 @@
         </ul>
       </div>
       <!-- navigation menu for larger screens using eleventyNavigation plug-in and nunjucks -->
-      {% set navPages = collections.all | eleventyNavigation %}
+     {% set navPages = collections.all | eleventyNavigation %}
       <div class="nav col-5">
         {%- for elemento in navPages %}
           <a href="{{ elemento.url | url }}"
