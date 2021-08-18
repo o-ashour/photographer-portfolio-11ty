@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+title: Home
+eleventyNavigation:
+  key: index
+  title: Home
+  order: 4
+---
+
+<!-- div container spanning 12-columns-->
+<div class="col-12">
+  <!-- header, body, main content -->
+  <h1 class="text-headline-index">J.J. Jamerson</h1>
+  <!-- set home image using nunjucks -->
+  <div class="indexImg">
+    {% set element = {"image": "field test.jpg"} %}
+    {% include 'components/project.njk' %}
+  </div>
+</div>

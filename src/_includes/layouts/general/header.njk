@@ -1,0 +1,37 @@
+<div class="header">
+  <!-- create a grid container to place logo and navigation menus across header -->
+  <div class="container grid">
+      <div class="header-logo col-7">
+        <a href="http://localhost:4000/"><img src="/assets/images/jp-logo.png" alt="JPhoto"></a>
+      </div>
+      <!-- icon for navigation menu for small screens -->
+      <button id="mostrar-menu"  class="hamburger hamburger--spin header-nav-icon">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <!-- pop-out navigation menu for small screens -->
+      <div class="menu-nav">
+        <button id="cerrar-menu" class="cerrar-menu" aria-label="Cerrar">
+          &times;
+        </button>
+        <ul>
+          <li><a href="http://localhost:4000/">Home</a></li>
+          <li><a href="http://localhost:4000/gallery/">Gallery</a></li>
+          <li><a href="http://localhost:4000/about/">About</a></li>
+          <li><a href="http://localhost:4000/contact/">Contact</a></li>
+        </ul>
+      </div>
+      <!-- navigation menu for larger screens using eleventyNavigation plug-in and nunjucks -->
+      {% set navPages = collections.all | eleventyNavigation %}
+      <div class="nav col-5">
+        {%- for elemento in navPages %}
+          <a href="{{ elemento.url | url }}"
+            {% if elemento.url == page.url %} class="active"{% endif %}
+          >
+            {{ elemento.title }}
+          </a>
+        {%- endfor %}
+      </div>
+  </div>
+</div>

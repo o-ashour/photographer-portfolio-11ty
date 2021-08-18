@@ -1,0 +1,54 @@
+html {
+  /* Familias tipográficas */
+  --font-1: "Montserrat", sans-serif;
+  --font-2: "Raleway", sans-serif;
+
+  /* Variables tipográficas */
+  --text-caption: 9px;
+  /* --text-footer: 9px; */
+  --text-main-sm: 11px;
+  --text-gnav: 11px;
+  --text-main-gallery: 12px;
+  /* --text-note: 13px; */
+  --text-base: 14px;
+  --text-extrabase: 16px;
+  --text-subheader: 18px;
+  --text-title: 24px;
+  --text-headline: 36px;
+}
+
+/* adjust for tablet size*/
+@media (min-width: 768px) {
+  html {
+    /* --text-footer: 11px; */
+    --text-caption: 11px;
+    --text-gnav: 12px;
+    --text-main-sm: 14px;
+    --text-main-gallery: 14px;
+    --text-base: 16px;
+    --text-subheader: 24px;
+    --text-headline: 40px;
+  }
+}
+
+@media (min-width: 900px) {
+  html {
+    /*--text-note: 14px;*/
+    --text-base: 18px;
+    --text-extrabase: 24px;
+    --text-subheader: 36px;
+    --text-title: 48px;
+    --text-headline: 64px;
+    /*--text-display: 96px;
+    --text-jumbo: 144px;*/
+  }
+}
+
+/* adjust for laptop size */
+@media (min-width: 1440px) {
+  html {
+    --text-caption: 12px;
+    --text-gnav: 14px;
+    --text-sub-base: 15px;
+  }
+}

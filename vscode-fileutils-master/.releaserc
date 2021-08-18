@@ -1,0 +1,27 @@
+{
+    "branch": "master",
+    "plugins": [
+        "@semantic-release/commit-analyzer",
+        "@semantic-release/release-notes-generator",
+        "@semantic-release/npm",
+        "@semantic-release/changelog",
+        "@semantic-release/git",
+        "@semantic-release/github"
+    ],
+    "prepare": [
+        "@semantic-release/npm",
+        "@semantic-release/changelog",
+        "@semantic-release/git",
+        {
+            "path": "semantic-release-vsce",
+            "packageVsix": "sleistner.vscode-fileutils.vsix"
+        }
+    ],
+    "publish": [
+        "semantic-release-vsce",
+        {
+            "path": "@semantic-release/github",
+            "assets": "sleistner.vscode-fileutils.vsix"
+        }
+    ]
+}

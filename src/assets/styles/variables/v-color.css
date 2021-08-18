@@ -1,0 +1,49 @@
+html {
+
+/* scale of variants for primary blue*/
+--primary-10: #0a365d;
+--primary-9: #0f518b;
+--primary-8: #1263aa;
+--primary-7: #177ed8;
+--primary-6: #489feb;
+--primary-5: #85bff2;
+--primary-4: #76b7f0;
+--primary-3: #b3d7f7;
+--primary-2: #d2e7fa;
+--primary-1: #e1effc;
+
+/*scale of vairiants for secondary green*/
+--secondary-10: #3b4c16;
+--secondary-9: #597322;
+--secondary-8: #638026;
+--secondary-7: #779a2e;
+--secondary-6: #8cb535;
+--secondary-5: #c0db86;
+--secondary-4: #c7df93;
+--secondary-3: #d4e7ad;
+--secondary-2: #dbebba;
+--secondary-1: #e2efc7;
+
+/*variables for primary blue and secondary green*/
+--primary: var(--primary-5);
+--secondary: var(--secondary-9);
+
+/*scale of variants for gray for font*/
+--grayscale-10: #232121;
+--grayscale-9: #353131;
+--grayscale-8: #474142;
+--grayscale-7: #615a5b;
+--grayscale-6: #7c7273;
+--grayscale-5: #958c8d;
+--grayscale-4: #a59e9e;
+--grayscale-3: #beb8b9;
+--grayscale-2: #d6d3d3;
+--grayscale-1: #e6e4e5;
+
+/*accent colours, t1 is salmon, t2 is sun-yellow*/
+--tertiary-1: #f26d78;
+--tertiary-1a: #f58c95;
+--tertiary-2: #f2d338;
+--tertiary-2a: #f5de68;
+--tertiary-2b: #f7e588;
+}

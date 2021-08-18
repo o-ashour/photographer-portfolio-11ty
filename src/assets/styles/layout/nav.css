@@ -1,0 +1,163 @@
+.header-nav-icon {
+  margin-left: auto;
+  position: absolute;
+  right: 3vw;
+  top: 5vh;
+  z-index: var(--z-index-navicon);
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  margin-top: 3px;
+}
+
+/* pop-out 'hamburger' navigation menu for small screens */
+.menu-nav{
+  position: fixed;
+  z-index: var(--z-index-navicon);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  background-color: #ee3e4d;
+  padding: 1rem 2rem;
+  transform: translateX(-250px);
+  transition: transform .3s;
+}
+
+.menu-nav.visible{
+  transform: translateX(0);
+}
+
+.menu-nav ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+.menu-nav li{
+  margin-bottom: 1rem;
+}
+
+.menu-nav a{
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu-nav a:hover {
+  color: var(--grayscale-10);
+}
+
+.mostrar-menu{
+  background-color: #e94057;
+  color: white;
+  padding: .5rem 1rem;
+  border: 0;
+  border-radius: .3rem;
+  cursor: pointer;
+  position: absolute;
+  right: 2.5vw;
+}
+
+.cerrar-menu{
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+}
+
+/* horizontal 'eleventy' navigation menu for larger screens */
+.nav a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 10px;
+  display: inline-block;
+  float: right;
+}
+
+.nav a:hover {
+  opacity: 0.7;
+}
+
+.nav a.active {
+  border-bottom: 2px solid;
+}
+
+.nav {
+  display: none;
+}
+
+.galleryNav {
+  margin-top: var(--spacer-s);
+  margin-left: var(--spacer-m);
+}
+
+/* horizontal bottom navigation menu for gallery page for smaller screens */
+.galleryNav a {
+  padding-bottom: var(--spacer-xs);
+  font-size: var(--text-gnav);
+  text-decoration: none;
+  color: var(--secondary-9);
+}
+
+.galleryNav a.active {
+  border-bottom: 1px solid var(--secondary-8);
+}
+
+.galleryNav a:hover:not(.active) {
+  color: var(--tertiary-1);
+}
+
+/* vertical side navigation for gallery page for larger screens*/
+.gallSideNav {
+  display: none;
+}
+
+/* adjust navigation classes for tablet size */
+@media (min-width: 768px) {
+
+  .galleryNav {
+    margin-bottom: var(--spacer-s);
+  }
+}
+
+@media (min-width: 900px) {
+  .header-nav-icon {
+    display: none;
+  }
+  .nav {
+    display: inline-block;
+  }
+}
+
+/* adjust navigation classes for laptop size */
+@media (min-width: 1440px) {
+
+  .galleryNav {
+    display: none;
+  }
+
+  .gallSideNav {
+    display: inline-block;
+    position: absolute;
+    left: 10vw;
+    top: 20vh;
+  }
+
+  .gallSideNav a {
+    font-size: var(--text-gnav);
+    text-decoration: none;
+    color: var(--secondary-9);
+  }
+
+  /* style for hovering over side navigation items in gallery, but don't apply
+  for active item */
+  .gallSideNav a:hover:not(.active) {
+    color: var(--tertiary-1);
+  }
+}

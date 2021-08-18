@@ -1,0 +1,93 @@
+---
+layout: layouts/base.njk
+title: Gallery
+eleventyNavigation:
+  key: gallery
+  title: Gallery
+  order: 3
+---
+
+<!-- div container spanning 12-columns -->
+<div class="col-12">
+  <h1 class="text-headline">Gallery</h1>
+
+<!-- carousel image gallery -->
+  <div class="galleryImg">
+    <!-- Slideshow container -->
+    <div class="slideshow-container fade col-3">
+
+     <!-- Full images with numbers and message Info -->
+     <div class="Containers">
+       <div class="MessageInfo">1 / 4</div>
+       <img src="/assets/images/desert stop (full).png">
+       <p class="text-caption">1a: Lorem ipsum dolor sit amet, consectetur, 20xx</p>
+     </div>
+
+     <div class="Containers">
+       <div class="MessageInfo">2 / 4</div>
+       <img src="/assets/images/desert critter.JPG">
+       <p class="text-caption">1b: Lorem ipsum dolor sit amet, consectetur, 20xx</p>
+     </div>
+
+     <div class="Containers">
+       <div class="MessageInfo">3 / 4</div>
+       <img src="/assets/images/expanse.JPG">
+       <p class="text-caption">1c: Lorem ipsum dolor sit amet, consectetur, 20xx</p>
+     </div>
+
+     <div class="Containers">
+       <div class="MessageInfo">4 / 4</div>
+       <img src="/assets/images/kindling collector.JPG">
+       <p class="text-caption">1d: Lorem ipsum dolor sit amet, consectetur, 20xx</p>
+     </div>
+
+     <!-- Back and forward buttons -->
+     <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+     <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The circles/dots -->
+   <div style="text-align:center">
+     <span class="dots" onclick="currentSlide(1)"></span>
+     <span class="dots" onclick="currentSlide(2)"></span>
+     <span class="dots" onclick="currentSlide(3)"></span>
+     <span class="dots" onclick="currentSlide(4)"></span>
+   </div>
+  </div>
+
+  <!-- using grids/grid-view to place main gallery text -->
+   <div class="galleryTxt col-5">
+    <h2 class="text-subheader-gallery">Project 1</h2>
+    <p class="text-body-gallery">Lorem ipsum dolor sit amet, consectetur
+      adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magnaaliqua. Ut enim ad minim veniam, quis nostrud exercitation
+      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+
+  <!-- using another grid-container to place gallery navigation menu for small
+  screens -->
+  <div class="container grid">
+    <div class="galleryNav col-4 col-md-4 col-sm-2 col-xs-2 col-xxs-1">
+      <a class="active" href="http://localhost:4000/gallery/">Project 1</a>
+    </div>
+
+    <div class="galleryNav col-4 col-md-4 col-sm-2 col-xs-2 col-xxs-1">
+      <a href="http://localhost:4000/gallery2/">Project 2</a>
+    </div>
+
+    <div class="galleryNav col-4 col-md-2 col-sm-2 col-xs-2 col-xxs-1">
+      <a href="http://localhost:4000/gallery3/">Project 3</a>
+    </div>
+  </div>
+
+  <!-- this navigation menu appears on the side on larger screens only -->
+    <div class="gallSideNav">
+      <ul>
+        <li style="font-weight: 700;"><a class="active" href="http://localhost:4000/gallery/">Project 1</a></li>
+        <li><a href="http://localhost:4000/gallery2/">Project 2</a></li>
+        <li><a href="http://localhost:4000/gallery3/">Project 3</a></li>
+      </ul>
+    </div>
+</div>

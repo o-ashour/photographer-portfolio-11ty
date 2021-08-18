@@ -1,0 +1,51 @@
+.menu-nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  background-color: #e94057;
+  padding: 1rem 2rem;
+  transform: translateX(-250px);
+  transition: transform .3s;
+}
+
+.menu-nav.visible{
+  transform: translateX(0);
+}
+
+.menu-nav ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+.menu-nav li{
+  margin-bottom: 1rem;
+}
+
+.menu-nav a{
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.mostrar-menu{
+  background-color: #e94057;
+  color: white;
+  padding: .5rem 1rem;
+  border: 0;
+  border-radius: .3rem;
+  cursor: pointer;
+}
+
+.cerrar-menu{
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+}

@@ -1,0 +1,10 @@
+.header {
+  padding-top: var(--spacer-xs);
+  padding-bottom: var(--spacer-xs);
+}
+
+.header-logo {
+  width: 100px;
+  margin-top: var(--spacer-s);
+  margin-left: var(--spacer-xs);
+}

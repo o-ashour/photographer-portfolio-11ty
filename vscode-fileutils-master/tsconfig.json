@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "rootDir": ".",
+        "outDir": "out",
+        "module": "commonjs",
+        "target": "ES2019",
+        "sourceMap": true,
+        "strict": true,
+        "moduleResolution": "node",
+        "removeComments": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "allowSyntheticDefaultImports": true
+    },
+    "exclude": [
+		"node_modules",
+		".vscode-test"
+    ]
+}
+

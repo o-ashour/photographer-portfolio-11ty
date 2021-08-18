@@ -1,0 +1,32 @@
+/* footer classes */
+.footer {
+  padding-top: var(--spacer-s);
+  padding-bottom: var(--spacer-s);
+}
+
+/* copyright info */
+.footerTxt {
+  font-size: var(--text-caption);
+  margin-top: var(--spacer-s);
+  margin-left: var(--spacer-xs);
+}
+
+/* instagram icon to link to external instagram profile */
+.instaFooter {
+  width: 5vw;
+  height: auto;
+}
+
+/* adjust for tablet size */
+@media (min-width: 768px) {
+  .footerTxt {
+    margin-top: var(--spacer-m);
+  }
+}
+
+/* adjust for laptop size */
+@media (min-width: 1440px) {
+  .instaFooter {
+    width: 8%;
+  }
+}
