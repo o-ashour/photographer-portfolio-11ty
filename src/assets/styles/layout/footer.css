@@ -27,6 +27,6 @@
 /* adjust for laptop size */
 @media (min-width: 1440px) {
   .instaFooter {
-    width: 8%;
+    width: 3vw;
   }
 }

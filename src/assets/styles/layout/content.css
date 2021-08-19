@@ -99,6 +99,15 @@
   }
 }
 
+@media (min-width: 900px) {
+  .contactContainer {
+    /*width: 22vw;
+    display: inline-block;*/
+    height: 37vh;
+    margin: var(--spacer-l);
+  }
+}
+
 /* adjust content classes for laptop size */
 @media (min-width: 1440px) {
 
@@ -131,7 +140,7 @@
   }
 
   .contactContainer {
-    width: 22vw;
+    /*width: 22vw;*/
     display: inline-block;
     height: 37vh;
     margin: var(--spacer-l);
@@ -139,7 +148,9 @@
 
   /* image classes */
   .indexImg img {
-    height: 67vh;
+    height: 72vh;
+    /*object-position: left;
+    object-fit: cover;*/
   }
 
   .galleryImg {
