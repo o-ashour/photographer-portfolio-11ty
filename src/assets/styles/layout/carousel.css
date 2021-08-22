@@ -104,9 +104,17 @@
 }
 
 /* adjust for laptop size */
-@media (min-width: 1440px) {
+@media (min-width: 1025px) {
     .slideshow-container {
       max-width: 40vw;
       height: auto;
     }
 }
+
+/* adjust for laptop size */
+/* @media (min-width: 1440px) {
+    .slideshow-container {
+      max-width: 40vw;
+      height: auto;
+    }
+} */

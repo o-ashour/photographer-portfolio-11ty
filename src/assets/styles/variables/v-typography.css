@@ -45,10 +45,19 @@ html {
 }
 
 /* adjust for laptop size */
-@media (min-width: 1440px) {
+@media (min-width: 1025px) {
   html {
     --text-caption: 12px;
     --text-gnav: 14px;
     --text-sub-base: 15px;
   }
 }
+
+/* adjust for laptop size */
+/*@media (min-width: 1440px) {
+  html {
+    --text-caption: 12px;
+    --text-gnav: 14px;
+    --text-sub-base: 15px;
+  }
+}*/
