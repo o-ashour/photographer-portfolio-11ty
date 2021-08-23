@@ -109,12 +109,42 @@
       max-width: 40vw;
       height: auto;
     }
+
+    .MessageInfo {
+      display: none;
+    }
+
+    .dots {
+      position: relative;
+      top: -7vh;
+    }
+}
+
+@media (min-width: 1215px) {
+    .dots {
+      top: -5vh;
+    }
+}
+
+@media (min-width: 1350px) {
+    .dots {
+      top: -4vh;
+    }
+}
+
+@media (min-width: 1438px) {
+    .dots {
+      top: 2vh;
+    }
 }
 
 /* adjust for laptop size */
-/* @media (min-width: 1440px) {
-    .slideshow-container {
-      max-width: 40vw;
-      height: auto;
-    }
-} */
+@media (min-width: 1440px) {
+  .MessageInfo {
+    display: inline;
+  }
+
+  .dots {
+    top: 4vh;
+  }
+}

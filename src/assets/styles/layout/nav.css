@@ -179,6 +179,10 @@
     top: 20vh;
   }
 
+  .gallSideNav li {
+    margin: var(--spacer-l);
+  }
+
   .gallSideNav a {
     font-size: var(--text-gnav);
     text-decoration: none;

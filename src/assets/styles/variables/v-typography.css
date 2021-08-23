@@ -47,6 +47,7 @@ html {
 /* adjust for laptop size */
 @media (min-width: 1025px) {
   html {
+    --text-caption-sm: 11px;
     --text-caption: 12px;
     --text-gnav: 14px;
     --text-sub-base: 15px;
