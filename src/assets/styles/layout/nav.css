@@ -83,7 +83,7 @@
 
 .galleryNav a {
   padding-bottom: var(--spacer-xs);
-  padding-left: var(--spacer-l);
+  padding-left: var(--spacer-ml);
   font-size: var(--text-gnav);
   text-decoration: none;
   color: var(--secondary-9);
