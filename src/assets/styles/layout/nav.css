@@ -75,12 +75,12 @@
   display: none;
 }
 
+/* horizontal bottom navigation menu for gallery page for smaller screens */
 .galleryNav {
   margin-top: var(--spacer-s);
-  margin-left: var(--spacer-m);
+  margin-left: var(--spacer-l);
 }
 
-/* horizontal bottom navigation menu for gallery page for smaller screens */
 .galleryNav a {
   padding-bottom: var(--spacer-xs);
   font-size: var(--text-gnav);
@@ -96,9 +96,10 @@
   color: var(--tertiary-1);
 }
 
-/* vertical side navigation for gallery page for larger screens*/
-.gallSideNav {
-  display: none;
+@media (min-width: 375px) {
+  .galleryNav {
+    margin-left: var(--spacer-m);
+  }
 }
 
 /* adjust navigation classes for tablet size */
@@ -108,6 +109,13 @@
     margin-bottom: var(--spacer-s);
   }
 }
+
+/* vertical side navigation for gallery page for larger screens*/
+.gallSideNav {
+  display: none;
+}
+
+
 
 /*@media (min-width: 900px) {
 
