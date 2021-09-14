@@ -13,8 +13,14 @@
 
 /* instagram icon to link to external instagram profile */
 .instaFooter {
-  width: 5vw;
+  width: 6vw;
   height: auto;
+}
+
+@media (min-width: 375px) {
+  .instaFooter {
+    width: 5vw;
+  }
 }
 
 /* adjust for tablet size */

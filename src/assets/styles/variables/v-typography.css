@@ -4,10 +4,10 @@ html {
   --font-2: "Raleway", sans-serif;
 
   /* Variables tipográficas */
-  --text-caption: 9px;
+  --text-caption: 7px;
   /* --text-footer: 9px; */
   --text-main-sm: 11px;
-  --text-gnav: 11px;
+  --text-gnav: 8px;
   --text-main-gallery: 12px;
   /* --text-note: 13px; */
   --text-base: 14px;
@@ -17,6 +17,12 @@ html {
   --text-headline: 36px;
 }
 
+@media (min-width: 375px) {
+  html {
+   --text-gnav: 11px;
+   --text-caption: 9px;
+ }
+}
 /* adjust for tablet size*/
 @media (min-width: 768px) {
   html {
