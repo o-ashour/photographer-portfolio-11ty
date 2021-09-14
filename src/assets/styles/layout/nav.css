@@ -78,11 +78,13 @@
 /* horizontal bottom navigation menu for gallery page for smaller screens */
 .galleryNav {
   margin-top: var(--spacer-s);
-  margin-left: var(--spacer-s);
+  position: relative;
+  left: 10vw;
 }
 
 .galleryNav a {
   padding-bottom: var(--spacer-xs);
+
   font-size: var(--text-gnav);
   text-decoration: none;
   color: var(--secondary-9);
@@ -100,7 +102,7 @@
 @media (min-width: 375px) {
   .galleryNav {
     margin-left: var(--spacer-m);
-    padding-left: 0;
+    left: 0;
   }
 }
 
