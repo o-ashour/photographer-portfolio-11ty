@@ -78,7 +78,7 @@
 /* horizontal bottom navigation menu for gallery page for smaller screens */
 .galleryNav {
   margin-top: var(--spacer-s);
-  margin-left: var(--spacer-l);
+  margin-left: var(--spacer-ml);
 }
 
 .galleryNav a {
