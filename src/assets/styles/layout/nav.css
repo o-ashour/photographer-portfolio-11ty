@@ -92,7 +92,6 @@
 }
 
 .galleryNav a.active {
-
   border-bottom: 1px solid var(--secondary-8);
 }
 
@@ -101,15 +100,14 @@
 }
 
 @media (min-width: 375px) {
+
   .galleryNav {
     margin-left: var(--spacer-m);
     left: 0;
   }
   .galleryNav a {
-    color: var(--secondary-9);
-  }
-  .galleryNav a.active {
     font-weight: normal;
+    color: var(--secondary-9);
   }
 }
 
