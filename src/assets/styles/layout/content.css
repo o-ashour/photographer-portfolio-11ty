@@ -17,7 +17,7 @@
 }
 
 .aboutGear ul li {
-  margin-left: var(--spacer-xs);
+  margin-left: var(--spacer-s);
   color: var(--secondary-10);
 }
 
@@ -64,6 +64,12 @@ font-size: 25px;*/
   margin-top: var(--spacer-s);
   border-radius: 25px;
   object-fit: cover;
+}
+
+@media (min-width: 375px) {
+  .aboutGear ul li {
+    margin-left: var(--spacer-xs);
+  }
 }
 
 /* adjust content classes for tablet size */
@@ -160,6 +166,7 @@ font-size: 25px;*/
     position: relative;
     top: 28vh;
   }
+
   .aboutImg img {
     height: 59vh;
     width: 26vw;
@@ -167,6 +174,7 @@ font-size: 25px;*/
     top: 206px;
     left: 10vw;
   }
+
   .contactContainer a:hover {
     color: var(--secondary-8);
   }
