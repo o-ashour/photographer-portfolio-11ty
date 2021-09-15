@@ -84,7 +84,7 @@
 
 .galleryNav a {
   padding-bottom: var(--spacer-xs);
-
+  font-weight: 600;
   font-size: var(--text-gnav);
   text-decoration: none;
   color: var(--secondary-10);
@@ -92,7 +92,7 @@
 }
 
 .galleryNav a.active {
-  font-weight: 600;
+  
   border-bottom: 1px solid var(--secondary-8);
 }
 
