@@ -73,7 +73,7 @@ p {
   margin: var(--spacer-s);
   margin-top: var(--spacer-m);
   font-family: var(--font-2);
-  font-size: var(--text-extrabase);
+  font-size: var(--text-base);
   font-weight: 600;
   text-align: center;
   color: var(--secondary-10);
@@ -112,6 +112,7 @@ p {
 @media (min-width: 375px) {
   .text-body-contact {
     margin: var(--spacer-m);
+    font-size: var(--text-extrabase);
   }
 }
 
