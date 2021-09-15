@@ -43,9 +43,9 @@
   text-decoration: none;
 }
 
-.menu-nav a:hover {
+/*.menu-nav a:hover {
   color: var(--grayscale-10);
-}
+}*/
 
 .mostrar-menu{
   background-color: #e94057;
@@ -95,9 +95,9 @@
   border-bottom: 1px solid var(--secondary-8);
 }
 
-.galleryNav a:hover:not(.active) {
+/*.galleryNav a:hover:not(.active) {
   color: var(--tertiary-1);
-}
+}*/
 
 @media (min-width: 375px) {
 
@@ -189,6 +189,10 @@
     display: none;
   }
 
+  .galleryNav a:hover:not(.active) {
+    color: var(--tertiary-1);
+  }
+
   .gallSideNav {
     display: inline-block;
     position: absolute;
@@ -205,6 +209,7 @@
     text-decoration: none;
     color: var(--secondary-9);
   }
+
 
   /* style for hovering over side navigation items in gallery, but don't apply
   for active item */

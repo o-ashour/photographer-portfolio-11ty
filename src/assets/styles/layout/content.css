@@ -27,12 +27,13 @@
   color: inherit;
 }
 
-.contactContainer a:hover {
+/*.contactContainer a:hover {
   color: var(--secondary-8);
-  /*opacity: 0.8;
-  font-weight: 600;
-  font-size: 25px;*/
-}
+
+}*/
+/*opacity: 0.8;
+font-weight: 600;
+font-size: 25px;*/
 
 /* containers */
 .contactContainer {
@@ -165,6 +166,9 @@
     position: absolute;
     top: 206px;
     left: 10vw;
+  }
+  .contactContainer a:hover {
+    color: var(--secondary-8);
   }
 }
 
