@@ -36,7 +36,7 @@ p {
   font-size: var(--text-subheader);
   font-weight: 500;
   letter-spacing: var(--spacer-xs);
-  background-color: #fff; /*f9f9f9f9*/
+  background-color: #f9f9f9; /*f9f9f9f9*/
   color: var(--primary-9);
 }
 
@@ -59,7 +59,7 @@ p {
   font-weight: 300;
   text-align: left;
   letter-spacing: var(--spacer-xs);
-  background-color: #fff; /*f9f9f9f9*/
+  background-color: #f9f9f9; /*f9f9f9f9*/
   color: var(--grayscale-8);
 }
 
