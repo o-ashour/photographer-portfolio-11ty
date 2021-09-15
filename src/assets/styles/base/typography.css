@@ -70,7 +70,8 @@ p {
 }
 
 .text-body-contact {
-  margin: var(--spacer-m);
+  margin: var(--spacer-s);
+  margin-top: var(--spacer-m);
   font-family: var(--font-2);
   font-size: var(--text-extrabase);
   font-weight: 600;
@@ -106,6 +107,12 @@ p {
 .text-main-sm {
   font-family: var(--font-2);
   font-size: var(--text-main-sm);
+}
+
+@media (min-width: 375px) {
+  .text-body-contact {
+    margin: var(--spacer-m);
+  }
 }
 
 /* adjust type for tablet size */
