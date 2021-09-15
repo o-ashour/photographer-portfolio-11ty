@@ -43,10 +43,6 @@
   text-decoration: none;
 }
 
-/*.menu-nav a:hover {
-  color: var(--grayscale-10);
-}*/
-
 .mostrar-menu{
   background-color: #e94057;
   color: white;
@@ -88,19 +84,14 @@
   font-size: var(--text-gnav);
   text-decoration: none;
   color: var(--secondary-9);
-
 }
 
 .galleryNav a.active {
   border-bottom: 1px solid var(--secondary-8);
 }
 
-/*.galleryNav a:hover:not(.active) {
-  color: var(--tertiary-1);
-}*/
-
+/* adjust navigation classes for larger mobile size */
 @media (min-width: 375px) {
-
   .galleryNav {
     margin-left: var(--spacer-m);
     left: 0;
@@ -113,7 +104,6 @@
 
 /* adjust navigation classes for tablet size */
 @media (min-width: 768px) {
-
   .galleryNav {
     margin-bottom: var(--spacer-s);
   }
@@ -124,44 +114,8 @@
   display: none;
 }
 
-
-
-/*@media (min-width: 900px) {
-
-  .header-nav-icon {
-    display: none;
-  }
-
-  .nav {
-    display: inline-block;
-
-  }
-
-  .nav a {
-    color: inherit;
-    text-decoration: none;
-    font-weight: bold;
-    margin-right: 10px;
-    margin-top: var(--spacer-s);*/
-    /*display: inline-block;*/
-    /*float: right;
-  }
-
-  .nav a:hover {
-    opacity: 0.7;
-  }
-
-  .nav a.active {*/
-    /*border-bottom: 2px solid;*/
-  /*}
-} */
-
 /* adjust navigation classes for laptop size */
 @media (min-width: 1025px) {
-  /*.header-logo {
-    width: 8vw;
-  }*/
-
   .header-nav-icon {
     display: none;
   }
@@ -177,7 +131,6 @@
     font-weight: bold;
     margin-right: 10px;
     margin-top: var(--spacer-s);
-    /*display: inline-block;*/
     float: right;
   }
 
@@ -209,7 +162,6 @@
     text-decoration: none;
     color: var(--secondary-9);
   }
-
 
   /* style for hovering over side navigation items in gallery, but don't apply
   for active item */

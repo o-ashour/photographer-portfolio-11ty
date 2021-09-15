@@ -27,14 +27,6 @@
   color: inherit;
 }
 
-/*.contactContainer a:hover {
-  color: var(--secondary-8);
-
-}*/
-/*opacity: 0.8;
-font-weight: 600;
-font-size: 25px;*/
-
 /* containers */
 .contactContainer {
   max-width: 100vw;
@@ -74,7 +66,6 @@ font-size: 25px;*/
 
 /* adjust content classes for tablet size */
 @media (min-width: 768px) {
-
   /* elements */
   .aboutGear ul {
     width: 180px;
@@ -118,21 +109,10 @@ font-size: 25px;*/
   }
 }
 
-/*@media (min-width: 1438px) {
-    .contactContainer {
-      width: 26vw;
-      display: inline-block;
-      margin-top: var(--spacer-xl);
-    }
-}*/
-
 @media (min-width: 1025px) {
   /* elements */
   ul {
     margin-top: var(--spacer-l);
-  }
-  li {
-    /*margin: var(--spacer-l);*/
   }
 
   /* containers */
@@ -154,8 +134,6 @@ font-size: 25px;*/
 
   .galleryImg {
     position: absolute;
-    /*top: 26vh;
-    left: 26vw;*/
     top: 16vh;
     left: 26vw;
     width: 45vw;
@@ -182,13 +160,6 @@ font-size: 25px;*/
 
 /* adjust content classes for laptop size */
 @media (min-width: 1438px) {
-
-  /* elements */
-  /*ul {
-    margin-top: var(--spacer-l);
-  }*/
-
-
   .aboutGear ul li {
     margin: var(--spacer-2xs);
   }
@@ -202,9 +173,6 @@ font-size: 25px;*/
     width: 30vw;
     margin-right: var(--spacer-xl);
     top: 22vh;
-    /*position: absolute;
-
-    right: 44px;*/
   }
 
   .aboutGear {
@@ -214,7 +182,6 @@ font-size: 25px;*/
   }
 
   .contactContainer {
-    /*width: 22vw;*/
     display: inline-block;
     width: 26vw;
     height: 37vh;
@@ -225,8 +192,6 @@ font-size: 25px;*/
   /* image classes */
   .indexImg img {
     height: 72vh;
-    /*object-position: left;
-    object-fit: cover;*/
   }
 
   .galleryImg {
@@ -237,11 +202,6 @@ font-size: 25px;*/
   object-fit: cover;
   object-position: center;
   }
-  /*.galleryImg {
-    position: absolute;
-    top: 26vh;
-    left: 26vw;
-  }*/
 
   .aboutImg img {
     width: 26vw;

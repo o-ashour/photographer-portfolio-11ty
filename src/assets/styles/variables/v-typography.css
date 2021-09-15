@@ -5,11 +5,9 @@ html {
 
   /* Variables tipográficas */
   --text-caption: 7px;
-  /* --text-footer: 9px; */
   --text-main-sm: 11px;
   --text-gnav: 8px;
   --text-main-gallery: 12px;
-  /* --text-note: 13px; */
   --text-base: 14px;
   --text-extrabase: 16px;
   --text-subheader: 18px;
@@ -23,10 +21,10 @@ html {
    --text-caption: 9px;
  }
 }
+
 /* adjust for tablet size*/
 @media (min-width: 768px) {
   html {
-    /* --text-footer: 11px; */
     --text-caption: 11px;
     --text-gnav: 12px;
     --text-main-sm: 14px;
@@ -39,14 +37,11 @@ html {
 
 @media (min-width: 900px) {
   html {
-    /*--text-note: 14px;*/
     --text-base: 18px;
     --text-extrabase: 24px;
     --text-subheader: 36px;
     --text-title: 48px;
     --text-headline: 64px;
-    /*--text-display: 96px;
-    --text-jumbo: 144px;*/
   }
 }
 
@@ -59,12 +54,3 @@ html {
     --text-sub-base: 15px;
   }
 }
-
-/* adjust for laptop size */
-/*@media (min-width: 1440px) {
-  html {
-    --text-caption: 12px;
-    --text-gnav: 14px;
-    --text-sub-base: 15px;
-  }
-}*/
