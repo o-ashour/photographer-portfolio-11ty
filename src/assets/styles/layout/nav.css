@@ -87,12 +87,12 @@
   font-weight: 600;
   font-size: var(--text-gnav);
   text-decoration: none;
-  color: var(--secondary-10);
+  color: var(--secondary-9);
 
 }
 
 .galleryNav a.active {
-  
+
   border-bottom: 1px solid var(--secondary-8);
 }
 
