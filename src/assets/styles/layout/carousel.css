@@ -67,6 +67,10 @@
   background-color: #717161;
 }
 
+.enable, .dots:active {
+  background-color: #717161;
+}
+
 /* Faint animation */
 .fade {
   -webkit-animation-name: fade;
