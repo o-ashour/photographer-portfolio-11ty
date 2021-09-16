@@ -1,5 +1,5 @@
 // javascript for carousel photo gallery in gallery page
-var slidePosition = 1;
+let slidePosition = 1;
 SlideShow(slidePosition);
 
 // forward/Back controls
@@ -14,7 +14,7 @@ function currentSlide(n) {
 
 function SlideShow(n) {
   var i;
-  let slides = document.getElementsByClassName("Containers");
+  var slides = document.getElementsByClassName("Containers");
   var circles = document.getElementsByClassName("dots");
   if (n > slides.length) {slidePosition = 1}
   if (n < 1) {slidePosition = slides.length}
