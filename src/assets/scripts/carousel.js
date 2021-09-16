@@ -25,5 +25,5 @@ function SlideShow(n) {
       circles[i].className = circles[i].className.replace(" enable", "");
   }
   //slides[slidePosition-1].style.display = "block";
-  circles[slidePosition-1].className += " enable";
+  //circles[slidePosition-1].className += " enable";
 }
