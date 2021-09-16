@@ -1,5 +1,5 @@
 // javascript for carousel photo gallery in gallery page
-let slidePosition = 1;
+var slidePosition = 1;
 SlideShow(slidePosition);
 
 // forward/Back controls
@@ -24,6 +24,6 @@ function SlideShow(n) {
   for (i = 0; i < circles.length; i++) {
       circles[i].className = circles[i].className.replace(" enable", "");
   }
-  slides[slidePosition-1].style.display = "block";
+  //slides[slidePosition-1].style.display = "block";
   circles[slidePosition-1].className += " enable";
 }
