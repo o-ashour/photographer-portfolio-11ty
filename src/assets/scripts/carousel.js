@@ -14,7 +14,6 @@ function currentSlide(n) {
 
 function SlideShow(n) {
   var i;
-  const slides = [];
   var slides = document.getElementsByClassName("Containers");
   var circles = document.getElementsByClassName("dots");
   if (n > slides.length) {slidePosition = 1}
