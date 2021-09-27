@@ -26,5 +26,5 @@ function SlideShow(n) {
   }
   slides[slidePosition-1].style.display = "block";
   circles[slidePosition-1].className += " enable";
-  console.log(return slides[slideposition - 1]);
+  console.log(slides[slideposition - 1]);
 }
