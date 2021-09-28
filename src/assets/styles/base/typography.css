@@ -64,9 +64,14 @@ p {
 }
 
 /* body text classes */
-.text-body-gallery, .text-body-about {
+.text-body-gallery,  {
   font-family: var(--font-2);
   font-size: var(--text-main-gallery);
+}
+
+.text-body-about {
+  font-family: var(--font-2);
+  font-size: var(--text-base);
 }
 
 .text-body-contact {
@@ -192,7 +197,7 @@ p {
  }
 
  .text-body-about {
-   font-size: var(--text-base);
+   /*font-size: var(--text-base);*/
    width: 42vw;
    position: absolute;
    top: 300px;

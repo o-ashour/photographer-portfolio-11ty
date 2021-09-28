@@ -6,14 +6,14 @@
 
 /* elements */
 .aboutGear ul {
-  width: 125px;
+  /*width: 125px;
   height: 115px;
   margin-top: var(--spacer-m);
   margin-left: var(--spacer-m);
-  padding: var(--spacer-m);
+  padding: var(--spacer-m);*/
   list-style-type: disc;
-  border-radius: 100%;
-  background-color: var(--tertiary-2);
+  /*border-radius: 100%;
+  background-color: var(--tertiary-2);*/
 }
 
 .aboutGear ul li {
@@ -68,11 +68,11 @@
 @media (min-width: 768px) {
   /* elements */
   .aboutGear ul {
-    width: 180px;
+    /*width: 180px;
     height: 180px;
     margin-top: var(--spacer-l);
     margin-left: var(--spacer-xl);
-    padding: var(--spacer-l);
+    padding: var(--spacer-l);*/
   }
 
   /* containers */
@@ -165,7 +165,7 @@
   }
 
   .aboutGear ul {
-    top: 0;
+    /*top: 0;*/
   }
 
   /* containers */
