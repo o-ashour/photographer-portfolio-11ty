@@ -41,15 +41,19 @@ p {
 }
 
 .text-subheader-about {
-  width: 125px;
-  margin-top: var(--spacer-l);
+  /*width: 125px;
+  float: left;*/
+  margin-top: var(--spacer-m);
+  /*margin-left: 8vw;*/
   padding: var(--spacer-2xs);
-  float: right;
+  /*float: right;*/
   font-family: var(--font-1);
   font-size: var(--text-subheader);
   letter-spacing: var(--spacer-xs);
+  border-radius: 25%;
+  box-shadow: 1px 2px;
   background-color: var(--grayscale-1);
-  color: var(--grayscale-7);
+  color: var(--grayscale-8);
 }
 
 .text-subheader-contact {
@@ -75,11 +79,12 @@ p {
 }
 
 .text-body-contact {
-  margin: var(--spacer-s);
-  margin-top: var(--spacer-m);
+  /*margin: var(--spacer-s);*/
+  margin-top: var(--spacer-xl);
+  margin-right: var(--spacer-l);
   font-family: var(--font-2);
-  font-size: var(--text-base);
-  font-weight: 600;
+  /*font-size: var(--text-base);*/
+  /*font-weight: 600;*/
   text-align: center;
   color: var(--secondary-10);
 }
@@ -134,7 +139,7 @@ p {
   }
 
   .text-body-contact {
-    padding: var(--spacer-m);
+    padding: var(--spacer-l);
     font-size: var(--text-title);
     font-weight: 500;
   }
@@ -153,14 +158,16 @@ p {
     width: 20vw;
   }
   .text-body-contact {
-    font-size: var(--text-base);
-    text-align: none;
+    font-size: var(--text-extrabase);
+    /*text-align: none;
     margin: 0;
     padding: 0;
     padding-right: 2vw;
-    float: right;
+    float: right;*/
+    padding: var(--spacer-m);
     position: relative;
-    top: -3vh;
+    top: -2vh;
+    right: -2vw;
   }
 }
 
@@ -202,6 +209,14 @@ p {
    position: absolute;
    top: 300px;
    right: 16vw;
+ }
+
+ .text-body-contact {
+   font-size: var(--text-base);
+   font-weight: 600;
+   margin: 0;
+   margin-top: var(--spacer-xl);
+   margin-right: var(--spacer-l);
  }
 }
 
@@ -270,7 +285,9 @@ p {
   }
 
   .text-body-contact {
-    margin-top: var(--spacer-l);
+    /*margin-top: var(--spacer-xl);
+    margin-right: 18px;
+    margin-left: 7px;*/
     padding-top: var(--spacer-l);
     padding-right: var(--spacer-l);
     padding-left: var(--spacer-2xs);
@@ -291,6 +308,6 @@ p {
   }
 
   .text-body-contact {
-    padding-right: 1vw;
+    /*padding-right: 1vw;*/
   }
 }

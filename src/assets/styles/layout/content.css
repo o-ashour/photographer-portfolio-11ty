@@ -5,20 +5,40 @@
 }
 
 /* elements */
-.aboutGear ul {
+.aboutGear {
   /*width: 125px;
   height: 115px;
-  margin-top: var(--spacer-m);
+  margin-top: var(--spacer-m);*/
   margin-left: var(--spacer-m);
-  padding: var(--spacer-m);*/
-  list-style-type: disc;
+  padding: var(--spacer-s);
+  /*list-style-type: disc;
+  display: inline-block;
+  width: 10%;*/
   /*border-radius: 100%;
   background-color: var(--tertiary-2);*/
+  /*margin-top: var(--spacer-m);
+  padding: var(--spacer-m);*/
+  /*list-style-type: disc;
+  width: 50%;*/
+  /*float: right;*/
+  font-family: var(--font-2);
+  font-size: var(--text-main-sm);
+  border: 1px dotted var(--tertiary-1);
+  border-radius: 28%;
 }
 
 .aboutGear ul li {
   margin-left: var(--spacer-s);
   color: var(--secondary-10);
+}
+
+.about-gear-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  max-width: 100%;
+  height: auto;
 }
 
 .contactContainer a:link {
@@ -30,7 +50,7 @@
 /* containers */
 .contactContainer {
   max-width: 100vw;
-  height: 20vh;
+  min-height: 20vh;
   margin: var(--spacer-m);
   background-color: var(--tertiary-2);
 }
@@ -82,7 +102,7 @@
   }
 
   .contactContainer {
-    height: 21vh;
+    min-height: 21vh;
     margin-top: var(--spacer-m);
     margin-bottom: var(--spacer-l);
   }
@@ -105,7 +125,7 @@
 @media (min-width: 900px) {
   .contactContainer {
     max-width: 100vw;
-    height: 14vh;
+    min-height: 10em;
   }
 }
 
@@ -140,9 +160,10 @@
     z-index: var(--z-index-gallery);
   }
 
-  .aboutGear ul {
-    position: relative;
-    top: 28vh;
+  .aboutGear {
+    display: inline;
+    width: 25px;
+    float:right;
   }
 
   .aboutImg img {
@@ -151,6 +172,20 @@
     position: absolute;
     top: 206px;
     left: 10vw;
+  }
+
+  .contactContainer-lg {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+  }
+
+  .contactContainer {
+    /*display: inline-block;*/
+    width: 26vw;
+    min-height: 37vh;
+    /*margin: var(--spacer-l);*/
+    margin-top: var(--spacer-xl);
   }
 
   .contactContainer a:hover {
@@ -182,11 +217,11 @@
   }
 
   .contactContainer {
-    display: inline-block;
+    /*display: inline-block;
     width: 26vw;
-    height: 37vh;
+    min-height: 37vh;
     margin: var(--spacer-l);
-    margin-top: var(--spacer-xl);
+    margin-top: var(--spacer-xl);*/
   }
 
   /* image classes */
@@ -198,9 +233,9 @@
     top: 25vh;
   }
   .Containers img {
-  height: 46vh;
-  object-fit: cover;
-  object-position: center;
+    height: 46vh;
+    object-fit: cover;
+    object-position: center;
   }
 
   .aboutImg img {
@@ -213,6 +248,6 @@
 
 @media (min-width: 1470px) {
     .contactContainer {
-      width: 22vw;
+      /*width: 22vw;*/
     }
  }
