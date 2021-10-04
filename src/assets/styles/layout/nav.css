@@ -147,10 +147,13 @@
   }
 
   .gallSideNav {
-    display: inline-block;
-    position: absolute;
-    left: 10vw;
-    top: 20vh;
+    display: block;
+    /*left: 10vw;
+    top: 20vh;*/
+    position: relative;
+    min-height: 100%;
+    min-width: 16%;
+    float: left;
   }
 
   .gallSideNav li {

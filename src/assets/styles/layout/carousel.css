@@ -97,7 +97,7 @@
       margin: 0 3px;
       background-color: var(--grayscale-4);
       border-radius: 50%;
-      display: inline-block;
+      display: none;
       transition: background-color 0.5s ease;
     }
 }
@@ -105,8 +105,8 @@
 /* adjust for laptop size */
 @media (min-width: 1025px) {
     .slideshow-container {
-      max-width: 40vw;
-      height: auto;
+      /*max-width: 40vw;
+      height: auto;*/
     }
 
     .MessageInfo {
