@@ -70,10 +70,11 @@
 }
 
 .Containers img {
-  /*width: 100vw;
+  /*width: 100vw;*/
   height: 35vh;
+  width: 100vw;
   object-fit: cover;
-  border-radius: 25px;*/
+  border-radius: 25px;
 }
 
 .aboutImg img {
@@ -120,8 +121,8 @@
 
   /* images */
   .Containers img {
-    /*height: 46vh;
-    object-position: right;*/
+    height: 46vh;
+    object-position: right;
   }
 
   .indexImg img {
@@ -155,8 +156,8 @@
   /* containers */
   .galleryTxt {
     max-width: 31vw;
-    padding: 0;
-    margin-top: 0;
+    padding: 0 5%;
+    margin-top: 10vh;
     margin-right: 0;
     /*margin-right: var(--spacer-m);
     padding: var(--spacer-xl);*/
@@ -168,17 +169,18 @@
 
   /* image classes */
   .Containers img {
-    /*height: 52vh;
-    object-fit: contain;
-    object-position: center;*/
+    height: 52vh;/*
+    object-fit: contain;*/
+    object-position: center;
   }
 
   .galleryImg {
     /*position: relative;
     top: 16vh;
     left: 26vw;*/
-    max-width: 44%;
-    margin-left: 5vw;
+    max-width: 46%;
+    margin-top: var(--spacer-l);
+    margin-left: 7vw;
     float: left;
     /*z-index: var(--z-index-gallery);*/
   }
@@ -298,8 +300,8 @@
     /*top: 25vh;*/
   }
   .Containers img {
-    /*height: 46vh;
-    object-fit: cover;
+    height: 46vh;
+    /*object-fit: cover;
     object-position: center;*/
   }
 
