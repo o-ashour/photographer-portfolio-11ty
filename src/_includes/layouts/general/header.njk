@@ -1,8 +1,8 @@
 <div class="header">
   <!-- create a grid container to place logo and navigation menus across header -->
-  <div class="container grid">
+  <!-- <div class="container grid"> -->
 
-      <div class="header-logo col-7">
+      <div class="header-logo"> <!-- col-7 -->
         <a href="/index/"><img src="/assets/images/jp-logo.png" alt="JPhoto"></a>
       </div>
 
@@ -28,7 +28,7 @@
 
       <!-- navigation menu for larger screens using eleventyNavigation plug-in and nunjucks -->
       {% set navPages = collections.all | eleventyNavigation %}
-      <div class="nav col-5">
+      <div class="nav"> <!-- col-5 -->
         {%- for elemento in navPages %}
           <a href="{{ elemento.url | url }}"
             {% if elemento.url == page.url %} class="active"
@@ -40,5 +40,5 @@
       </div>
 
 
-  </div>
+  <!-- </div> -->
 </div>

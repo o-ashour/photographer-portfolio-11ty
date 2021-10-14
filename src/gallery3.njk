@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/gallery-base.njk
 title: Gallery
 eleventyNavigation:
 key: gallery3
@@ -7,8 +7,12 @@ parent: gallery
 ---
 
 <!-- div container spanning 12-columns -->
-<div class="col-12">
+<!-- <div class="col-12"> -->
+<!-- <div class="clearfix"> -->
   <h1 class="text-headline">Gallery</h1>
+  <!-- <div class="clearfix"> -->
+
+
   <div class="gallSideNav">
     <ul>
       <li><a href="/gallery/">Project 1</a></li>
@@ -16,6 +20,10 @@ parent: gallery
       <li style="font-weight: 700;"><a class="active" href="/gallery3/">Project 3</a></li>
     </ul>
   </div>
+
+
+
+
 <!-- carousel image gallery -->
   <div class="galleryImg">
     <!-- Slideshow container -->
@@ -24,27 +32,49 @@ parent: gallery
      <!-- Full images with numbers and message Info -->
      <div class="Containers">
        <div class="MessageInfo">1 / 4</div>
-       <img src="/assets/images/field on film (sm).jpg" alt="open field">
+       <picture>
+         <source media="(max-width: 600px)" srcset="/assets/images/field-film-700w.jpg">
+         <source media="(min-width: 601px)" srcset="/assets/images/field-film-1025w.jpg">
+         <img src="/assets/images/field-film-1025w.jpg" alt="Ploughed Field">
+       </picture>
+       <!-- <img src="/assets/images/field on film (sm).jpg" alt="open field"> -->
        <p class="gallery-caption">3a: Lorem ipsum dolor sit amet, consectetur, 20xx</p>
      </div>
 
      <div class="Containers">
        <div class="MessageInfo">2 / 4</div>
-       <img src="/assets/images/english cottage.JPG" alt="cottages">
+       <picture>
+         <source media="(max-width: 600px)" srcset="/assets/images/english-cottage-600w.jpg">
+         <source media="(min-width: 601px)" srcset="/assets/images/english-cottage-1025w.jpg">
+         <img src="/assets/images/english-cottage-600w.jpg" alt="Cottage House">
+       </picture>
+       <!-- <img src="/assets/images/english cottage.JPG" alt="cottages"> -->
        <p class="gallery-caption">3b: Lorem ipsum dolor sit amet, consectetur, 20xx</p>
      </div>
 
      <div class="Containers">
        <div class="MessageInfo">3 / 4</div>
-       <img src="/assets/images/field test.jpg" alt="wild flower">
+       <picture>
+         <source media="(max-width: 600px)" srcset="/assets/images/field-test-600w.jpg">
+         <source media="(min-width: 601px)" srcset="/assets/images/field-test-1025w.jpg">
+         <img src="/assets/images/field-test-600w.jpg" alt="Wild Flower">
+       </picture>
+       <!-- <img src="/assets/images/field test.jpg" alt="wild flower"> -->
        <p class="gallery-caption">3c: Lorem ipsum dolor sit amet, consectetur, 20xx</p>
      </div>
 
      <div class="Containers">
        <div class="MessageInfo">4 / 4</div>
-       <img src="/assets/images/cows grazing.JPG" alt="cows grazing">
+       <picture>
+         <source media="(max-width: 600px)" srcset="/assets/images/cows-grazing-600w.jpg">
+         <source media="(min-width: 601px)" srcset="/assets/images/cows-grazing-1025w.JPG">
+         <img src="/assets/images/cows-grazing-600w.jpg" alt="Cows Grazing">
+       </picture>
+       <!-- <img src="/assets/images/cows grazing.JPG" alt="cows grazing"> -->
        <p class="gallery-caption">3d: Lorem ipsum dolor sit amet, consectetur, 20xx</p>
      </div>
+
+
 
      <!-- Back and forward buttons -->
      <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
@@ -62,6 +92,9 @@ parent: gallery
   </div>
 
   <!-- using grids/grid-view to place main gallery text -->
+
+
+
    <div class="galleryTxt col-5">
       <h2 class="text-subheader-gallery">Project 3</h2>
       <p class="text-body-gallery">Curabitur rutrum sem sed orci lacinia faucibus.
@@ -70,9 +103,11 @@ parent: gallery
          Sed in eleifend nunc, nec blandit magna.
       </p>
     </div>
+<!-- </div> -->
 
   <!-- using another grid-container to place gallery navigation menu for small
   screens -->
+  <!--
   <div class="container grid">
     <div class="galleryNav col-4 col-md-4 col-sm-2 col-xs-2 col-xxs-1">
       <a href="/gallery/">Project 1</a>
@@ -86,7 +121,8 @@ parent: gallery
       <a class="active" href="/gallery3/">Project 3</a>
     </div>
   </div>
+-->
   <!-- this navigation menu appears on the side on larger screens only -->
 
-</div>
-<script src="/assets/scripts/carousel.js"></script>
+<!-- </div> -->
+<!-- <script src="/assets/scripts/carousel.js"></script> -->

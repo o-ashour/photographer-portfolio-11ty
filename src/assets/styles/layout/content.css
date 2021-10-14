@@ -4,8 +4,23 @@
   padding-bottom: var(--spacer-xs);
 }
 
+main {
+  padding-top: var(--spacer-xs);
+  padding-right: var(--container-padding);
+  padding-bottom: var(--spacer-xs);
+  padding-left: var(--container-padding);
+  max-width: var(--maxwidth);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  min-height: 81%;
+}
+
 /* elements */
 
+.galleryImg {
+  /*display: none;*/
+}
 .aboutTxt {
   padding: 0 4%;
 }
@@ -69,11 +84,15 @@
   object-fit: cover;
 }
 
+/*picture {
+  height: auto;
+}*/
+
 .Containers img {
-  /*width: 100vw;*/
-  height: 35vh;
   width: 100vw;
+  height: 40vh;
   object-fit: cover;
+  object-position: top;
   border-radius: 25px;
 }
 
@@ -93,8 +112,20 @@
   }
 }
 
+@media (min-width: 600px) {
+  .Containers img {
+    height: 47vh;
+    object-position: center;
+  }
+}
+
 /* adjust content classes for tablet size */
 @media (min-width: 768px) {
+
+  main {
+      margin-top: var(--spacer-s);
+  }
+
   /* elements */
   .about-gear-container {
     margin-top: 0;
@@ -121,8 +152,8 @@
 
   /* images */
   .Containers img {
-    height: 46vh;
-    object-position: right;
+    /*height: 46vh;
+    object-position: right;*/
   }
 
   .indexImg img {
@@ -153,6 +184,10 @@
     clear: both;
     display: table;
   }
+
+  /*.clearfix {
+    overflow: auto;
+  }*/
   /* containers */
   .galleryTxt {
     max-width: 31vw;
@@ -169,9 +204,9 @@
 
   /* image classes */
   .Containers img {
-    height: 52vh;/*
-    object-fit: contain;*/
-    object-position: center;
+    /*height: 52vh;
+    object-fit: contain;
+    object-position: center;*/
   }
 
   .galleryImg {
@@ -300,8 +335,8 @@
     /*top: 25vh;*/
   }
   .Containers img {
-    height: 46vh;
-    /*object-fit: cover;
+    /*height: 46vh;
+    object-fit: cover;
     object-position: center;*/
   }
 

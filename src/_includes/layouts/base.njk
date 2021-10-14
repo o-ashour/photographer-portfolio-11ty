@@ -4,10 +4,10 @@ pages -->
 
 {% include "./general/header.njk" %}
 <!-- any elements belonging to 'content' class are included in this div -->
-<div class="content container grid">
+<main> <!-- class="content container grid" -->
 
   {{ content | safe }}
 
-</div>
+</main>
 
 {% include "./general/footer.njk" %}

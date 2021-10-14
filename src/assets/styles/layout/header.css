@@ -1,10 +1,12 @@
 .header {
   padding-top: var(--spacer-xs);
   padding-bottom: var(--spacer-xs);
+  overflow: hidden;
 }
 
 .header-logo {
   width: 100px;
+  float: left;
   margin-top: var(--spacer-s);
   margin-left: var(--spacer-xs);
 }

@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/gallery-base.njk
 title: Gallery
 eleventyNavigation:
 key: gallery2
@@ -7,7 +7,7 @@ parent: gallery
 ---
 
 <!-- div container spanning 12-columns -->
-<div class="col-12">
+<!-- <div class="col-12"> -->
   <h1 class="text-headline">Gallery</h1>
   <!-- this navigation menu appears on the side on larger screens only -->
     <div class="gallSideNav">
@@ -26,25 +26,45 @@ parent: gallery
      <!-- Full images with numbers and message Info -->
      <div class="Containers">
        <div class="MessageInfo">1 / 4</div>
-       <img src="/assets/images/smiley dudes (sm).JPG" alt="tunnel farmers">
+       <picture>
+         <source media="(max-width: 600px)" srcset="/assets/images/smiley-dudes-600w.jpg">
+         <source media="(min-width: 601px)" srcset="/assets/images/smiley-dudes-1025w.jpg">
+         <img src="/assets/images/smiley-dudes-600w.jpg" alt="Tunnel Farmers">
+       </picture>
+       <!-- <img src="/assets/images/smiley dudes (sm).JPG" alt="tunnel farmers"> -->
        <p class="gallery-caption">2a: Lorem ipsum dolor sit amet, consectetur, 20xx</p>
      </div>
 
      <div class="Containers">
        <div class="MessageInfo">2 / 4</div>
-       <img src="/assets/images/hands voy (sm).JPG" alt="hands harvesting">
+       <picture>
+         <source media="(max-width: 600px)" srcset="/assets/images/hands-voy-600w.JPG">
+         <source media="(min-width: 601px)" srcset="/assets/images/hands-voy-1025w.jpg">
+         <img src="/assets/images/hands-voy-600w.JPG" alt="Handing the Beans">
+       </picture>
+       <!-- <img src="/assets/images/hands-voy-600w.JPG" alt="hands harvesting"> -->
        <p class="gallery-caption">2b: Lorem ipsum dolor sit amet, consectetur, 20xx</p>
      </div>
 
      <div class="Containers">
        <div class="MessageInfo">3 / 4</div>
-       <img src="/assets/images/brass sprayer.jpg" alt="brass man">
+       <picture>
+         <source media="(max-width: 600px)" srcset="/assets/images/brass-sprayer-600w(alt).jpg">
+         <source media="(min-width: 601px)" srcset="/assets/images/brass-sprayer-1025w.jpg">
+         <img src="/assets/images/brass-sprayer-600w(alt).jpg" alt="Applying Brass Treatment" style="object-position:top;">
+       </picture>
+       <!-- <img src="/assets/images/brass sprayer.jpg" alt="brass man"> -->
        <p class="gallery-caption">2c: Lorem ipsum dolor sit amet, consectetur, 20xx</p>
      </div>
 
      <div class="Containers">
        <div class="MessageInfo">4 / 4</div>
-       <img src="/assets/images/bean vine.JPG" alt="bean vine">
+       <picture>
+         <source media="(max-width: 600px)" srcset="/assets/images/bean-vine-600w.jpg">
+         <source media="(min-width: 601px)" srcset="/assets/images/bean-vine-1025w.jpeg">
+         <img src="/assets/images/bean-vine-600w.jpg" alt="Hama Bean Vine">
+       </picture>
+       <!-- <img src="/assets/images/bean-vine-600w.JPG" alt="bean vine"> -->
        <p class="gallery-caption">2d: Lorem ipsum dolor sit amet, consectetur, 20xx</p>
      </div>
 
@@ -75,6 +95,7 @@ parent: gallery
 
   <!-- using another grid-container to place gallery navigation menu for small
   screens -->
+  <!--
   <div class="container grid">
     <div class="galleryNav col-4 col-md-4 col-sm-2 col-xs-2 col-xxs-1">
       <a href="/gallery/">Project 1</a>
@@ -88,7 +109,8 @@ parent: gallery
       <a href="/gallery3/">Project 3</a>
     </div>
   </div>
+-->
 
 
-</div>
-<script src="/assets/scripts/carousel.js"></script>
+<!-- </div> -->
+<!-- <script src="/assets/scripts/carousel.js"></script> -->

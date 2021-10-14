@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/gallery-base.njk
 title: Gallery
 eleventyNavigation:
   key: gallery
@@ -8,7 +8,7 @@ eleventyNavigation:
 ---
 
 <!-- div container spanning 12-columns -->
-<div class="col-12">
+<!-- <div class="col-12"> -->
   <h1 class="text-headline">Gallery</h1>
   <!-- this navigation menu appears on the side on larger screens only -->
     <div class="gallSideNav">
@@ -18,33 +18,77 @@ eleventyNavigation:
         <li><a href="/gallery3/">Project 3</a></li>
       </ul>
     </div>
+    <!-- <picture>
+      <source media="(max-width: 600px)" srcset="/assets/images/desert-stop-480w.jpg">
+      <source media="(min-width: 601px)" srcset="/assets/images/desert-stop-800w.jpg">
+      <img src="/assets/images/desert stop (800w).jpg" alt="desert stop">
+    </picture> -->
 <!-- carousel image gallery -->
   <div class="galleryImg">
     <!-- Slideshow container -->
-    <div class="slideshow-container fade col-3">
+    <div class="slideshow-container fade">
 
      <!-- Full images with numbers and message Info -->
      <div class="Containers">
        <div class="MessageInfo">1 / 4</div>
-       <img src="/assets/images/desert stop (cropped).jpeg" alt="desert stop">
-       <p class="gallery-caption">1a: Lorem ipsum dolor sit amet, consectetur, 20xx</p>
+          <!-- <picture>
+             <source media="(max-width: 799px)" srcset="/assets/images/desert stop (480w).jpg">
+             <source media="(min-width: 800px)" srcset="/assets/images/desert stop (800w).jpg">
+             <img src="/assets/images/desert stop (800w).jpg" alt="desert stop">
+          </picture> -->
+          <!-- <img
+            alt = "desert stop"
+            srcSet = "
+                      /assets/images/desert-stop-350w.jpg 350w,
+                      /assets/images/desert-stop-480w.jpg 480w,
+                      /assets/images/desert-stop-800w.jpg 600w,
+                      /assets/images/bean vine.jpg 800w
+                    "
+
+            sizes = "20vw"
+          >
+        -->
+          <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/desert-stop-600w.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/desert-stop-800w(alt).jpg">
+            <img src="/assets/images/desert-stop-600w.jpg" alt="desert stop">
+          </picture>
+          <!-- <img src="/assets/images/desert-stop-800w.jpg" alt="desert stop"> -->
+       <!-- <img src="/assets/images/desert stop (cropped).jpeg" alt="desert stop"> size = "(max-width: 800px) 53vw, 100vw" -->
+       <p class="gallery-caption">1a: Lorem ipsum dolor sit amet, consectetur, 20xx</p> <!--(max-width: 800px) (max-width: 1200px) 100vmin-->
      </div>
 
      <div class="Containers">
        <div class="MessageInfo">2 / 4</div>
-       <img src="/assets/images/desert critter.JPG" alt="desert critter">
+       <picture>
+         <source media="(max-width: 600px)" srcset="/assets/images/desert-critter-600w.jpg">
+         <source media="(max-width: 601px)" srcset="/assets/images/desert-critter-800w.jpg">
+         <!-- <source media="(min-width: 601px)" srcset="/assets/images/desert-stop-800w.jpg"> -->
+         <img src="/assets/images/desert-critter-600w.jpg" alt="desert critter">
+       </picture>
+       <!-- <img src="/assets/images/desert critter.JPG" alt="desert critter"> -->
        <p class="gallery-caption">1b: Lorem ipsum dolor sit amet, consectetur, 20xx</p>
      </div>
 
      <div class="Containers">
        <div class="MessageInfo">3 / 4</div>
-       <img src="/assets/images/expanse.JPG" alt="expanse">
+       <picture>
+         <source media="(max-width: 600px)" srcset="/assets/images/expanse-600w.jpg">
+         <source media="(min-width: 601px)" srcset="/assets/images/expanse-1025w.jpg">
+         <img src="/assets/images/expanse-600w.jpg" alt="expanse">
+       </picture>
+       <!-- <img src="/assets/images/expanse.JPG" alt="expanse"> -->
        <p class="gallery-caption">1c: Lorem ipsum dolor sit amet, consectetur, 20xx</p>
      </div>
 
      <div class="Containers">
        <div class="MessageInfo">4 / 4</div>
-       <img src="/assets/images/kindling collector.JPG" alt="kindling collector">
+       <picture>
+         <source media="(max-width: 600px)" srcset="/assets/images/kindling-collector-600w.jpeg">
+         <source media="(min-width: 601px)" srcset="/assets/images/kindling-collector-1025w.jpeg">
+         <img src="/assets/images/kindling-collector-600w.jpeg" style="object-position:center" alt="kindling collector">
+       </picture>
+       <!-- <img src="/assets/images/kindling-collector-600w.jpeg" alt="kindling collector"> -->
        <p class="gallery-caption">1d: Lorem ipsum dolor sit amet, consectetur, 20xx</p>
      </div>
 
@@ -62,7 +106,7 @@ eleventyNavigation:
      <span class="dots" onclick="currentSlide(4)"></span>
    </div>
   </div>
-  
+
   <!-- using grids/grid-view to place main gallery text -->
    <div class="galleryTxt">
     <h2 class="text-subheader-gallery">Project 1</h2>
@@ -76,20 +120,30 @@ eleventyNavigation:
 
   <!-- using another grid-container to place gallery navigation menu for small
   screens -->
-  <div class="container grid">
-    <div class="galleryNav col-4 col-md-4 col-sm-2 col-xs-2 col-xxs-1">
+  <!-- <div class="container grid"> -->
+  <!--  <div class="galleryNav">  col-4 col-md-4 col-sm-2 col-xs-2 col-xxs-1
       <a class="active" href="/gallery/">Project 1</a>
     </div>
 
-    <div class="galleryNav col-4 col-md-4 col-sm-2 col-xs-2 col-xxs-1">
+    <div class="galleryNav">  col-4 col-md-4 col-sm-2 col-xs-2 col-xxs-1
       <a href="/gallery2/">Project 2</a>
     </div>
 
-    <div class="galleryNav col-4 col-md-2 col-sm-2 col-xs-2 col-xxs-1">
+    <div class="galleryNav">  col-4 col-md-2 col-sm-2 col-xs-2 col-xxs-1
       <a href="/gallery3/">Project 3</a>
-    </div>
-  </div>
+    </div> -->
+  <!-- </div> -->
+<!--
+  <div class="galleryNav">
+    <a class="active"href="/gallery/">Project 1</a>
+
+    <a href="/gallery2/">Project 2</a>
+
+    <a href="/gallery3/">Project 3</a>
+ </div>
+-->
 
 
-</div>
-<script src="/assets/scripts/carousel.js"></script>
+
+<!-- </div> -->
+<!-- <script src="/assets/scripts/carousel.js"></script> -->
