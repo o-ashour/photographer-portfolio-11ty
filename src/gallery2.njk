@@ -6,8 +6,6 @@ key: gallery2
 parent: gallery
 ---
 
-<!-- div container spanning 12-columns -->
-<!-- <div class="col-12"> -->
   <h1 class="text-headline">Gallery</h1>
   <!-- this navigation menu appears on the side on larger screens only -->
     <div class="gallSideNav">
@@ -17,100 +15,92 @@ parent: gallery
         <li><a href="/gallery3/">Project 3</a></li>
       </ul>
     </div>
+
 <!-- carousel image gallery -->
   <div class="galleryImg">
 
-    <!-- Slideshow container -->
-    <div class="slideshow-container fade">
+      <!-- Slideshow container -->
+      <div class="slideshow-container fade">
 
-     <!-- Full images with numbers and message Info -->
-     <div class="Containers">
-       <div class="MessageInfo">1 / 4</div>
-       <picture>
-         <source media="(max-width: 600px)" srcset="/assets/images/smiley-dudes-600w.jpg">
-         <source media="(min-width: 601px)" srcset="/assets/images/smiley-dudes-1025w.jpg">
-         <img src="/assets/images/smiley-dudes-600w.jpg" alt="Tunnel Farmers">
-       </picture>
-       <!-- <img src="/assets/images/smiley dudes (sm).JPG" alt="tunnel farmers"> -->
-       <p class="gallery-caption">2a: Lorem ipsum dolor sit amet, consectetur, 20xx</p>
-     </div>
+       <!-- Full images with numbers and message Info -->
+         <div class="Containers">
+           <div class="MessageInfo">1 / 4</div>
+           <picture>
+             <source media="(max-width: 600px)" srcset="/assets/images/smiley-dudes-600w.jpg">
+             <source media="(min-width: 601px)" srcset="/assets/images/smiley-dudes-1025w.jpg">
+             <img src="/assets/images/smiley-dudes-600w.jpg" alt="Tunnel Farmers">
+           </picture>
+           <p class="gallery-caption">2a: Lorem ipsum dolor sit amet, consectetur, 20xx</p>
+         </div>
 
-     <div class="Containers">
-       <div class="MessageInfo">2 / 4</div>
-       <picture>
-         <source media="(max-width: 600px)" srcset="/assets/images/hands-voy-600w.JPG">
-         <source media="(min-width: 601px)" srcset="/assets/images/hands-voy-1025w.jpg">
-         <img src="/assets/images/hands-voy-600w.JPG" alt="Handing the Beans">
-       </picture>
-       <!-- <img src="/assets/images/hands-voy-600w.JPG" alt="hands harvesting"> -->
-       <p class="gallery-caption">2b: Lorem ipsum dolor sit amet, consectetur, 20xx</p>
-     </div>
+         <div class="Containers">
+           <div class="MessageInfo">2 / 4</div>
+           <picture>
+             <source media="(max-width: 600px)" srcset="/assets/images/hands-voy-600w.JPG">
+             <source media="(min-width: 601px)" srcset="/assets/images/hands-voy-1025w.jpg">
+             <img src="/assets/images/hands-voy-600w.JPG" alt="Handing the Beans">
+           </picture>
+           <p class="gallery-caption">2b: Lorem ipsum dolor sit amet, consectetur, 20xx</p>
+         </div>
 
-     <div class="Containers">
-       <div class="MessageInfo">3 / 4</div>
-       <picture>
-         <source media="(max-width: 600px)" srcset="/assets/images/brass-sprayer-600w(alt).jpg">
-         <source media="(min-width: 601px)" srcset="/assets/images/brass-sprayer-1025w.jpg">
-         <img src="/assets/images/brass-sprayer-600w(alt).jpg" alt="Applying Brass Treatment" style="object-position:top;">
-       </picture>
-       <!-- <img src="/assets/images/brass sprayer.jpg" alt="brass man"> -->
-       <p class="gallery-caption">2c: Lorem ipsum dolor sit amet, consectetur, 20xx</p>
-     </div>
+         <div class="Containers">
+           <div class="MessageInfo">3 / 4</div>
+           <picture>
+             <source media="(max-width: 600px)" srcset="/assets/images/brass-sprayer-600w(alt).jpg">
+             <source media="(min-width: 601px)" srcset="/assets/images/brass-sprayer-1025w.jpg">
+             <img src="/assets/images/brass-sprayer-600w(alt).jpg" alt="Applying Brass Treatment" style="object-position:top;">
+           </picture>
+           <p class="gallery-caption">2c: Lorem ipsum dolor sit amet, consectetur, 20xx</p>
+         </div>
 
-     <div class="Containers">
-       <div class="MessageInfo">4 / 4</div>
-       <picture>
-         <source media="(max-width: 600px)" srcset="/assets/images/bean-vine-600w.jpg">
-         <source media="(min-width: 601px)" srcset="/assets/images/bean-vine-1025w.jpeg">
-         <img src="/assets/images/bean-vine-600w.jpg" alt="Hama Bean Vine">
-       </picture>
-       <!-- <img src="/assets/images/bean-vine-600w.JPG" alt="bean vine"> -->
-       <p class="gallery-caption">2d: Lorem ipsum dolor sit amet, consectetur, 20xx</p>
-     </div>
+         <div class="Containers">
+           <div class="MessageInfo">4 / 4</div>
+           <picture>
+             <source media="(max-width: 600px)" srcset="/assets/images/bean-vine-600w.jpg">
+             <source media="(min-width: 601px)" srcset="/assets/images/bean-vine-1025w.jpeg">
+             <img src="/assets/images/bean-vine-600w.jpg" alt="Hama Bean Vine">
+           </picture>
+           <p class="gallery-caption">2d: Lorem ipsum dolor sit amet, consectetur, 20xx</p>
+         </div>
 
-     <!-- Back and forward buttons -->
-     <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
-     <a class="forward" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <br>
+         <!-- Back and forward buttons -->
+         <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+         <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
 
-    <!-- The circles/dots -->
-    <div style="text-align:center">
-     <span class="dots" onclick="currentSlide(1)"></span>
-     <span class="dots" onclick="currentSlide(2)"></span>
-     <span class="dots" onclick="currentSlide(3)"></span>
-     <span class="dots" onclick="currentSlide(4)"></span>
-    </div>
+      <!-- The circles/dots -->
+      <div style="text-align:center">
+       <span class="dots" onclick="currentSlide(1)"></span>
+       <span class="dots" onclick="currentSlide(2)"></span>
+       <span class="dots" onclick="currentSlide(3)"></span>
+       <span class="dots" onclick="currentSlide(4)"></span>
+      </div>
   </div>
 
   <!-- using grids/grid-view to place main gallery text -->
   <div class="galleryTxt col-5">
-    <h2 class="text-subheader-gallery">Project 2</h2>
-    <p class="text-body-gallery">Duis aute irure dolor in reprehenderit in
-      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-      sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-      mollit anim id est laborum.
-    </p>
+      <h2 class="text-subheader-gallery">Project 2</h2>
+      <p class="text-body-gallery">Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </p>
   </div>
 
-  <!-- using another grid-container to place gallery navigation menu for small
-  screens -->
-  <!--
-  <div class="container grid">
-    <div class="galleryNav col-4 col-md-4 col-sm-2 col-xs-2 col-xxs-1">
+<!--
+    <div class="galleryNav">
       <a href="/gallery/">Project 1</a>
     </div>
 
-    <div class="galleryNav col-4 col-md-4 col-sm-2 col-xs-2 col-xxs-1">
+    <div class="galleryNav">
       <a class="active" href="/gallery2/">Project 2</a>
     </div>
 
-    <div class="galleryNav col-4 col-md-2 col-sm-2 col-xs-2 col-xxs-1">
+    <div class="galleryNav">
       <a href="/gallery3/">Project 3</a>
     </div>
-  </div>
+
 -->
 
-
-<!-- </div> -->
 <!-- <script src="/assets/scripts/carousel.js"></script> -->

@@ -1,13 +1,11 @@
 .header-nav-icon {
-  margin-left: auto;
-  position: absolute;
-  right: 3vw;
-  top: 5vh;
+  float:right;
+  position: relative;
+  left: 0.5em;
+  top: 1.5em;
   z-index: var(--z-index-navicon);
   border: 0;
   background-color: transparent;
-  padding: 0;
-  margin-top: 3px;
 }
 
 /* pop-out 'hamburger' navigation menu for small screens */
@@ -74,20 +72,12 @@
 /* horizontal bottom navigation menu for gallery page for smaller screens */
 .galleryNav {
   display: flex;
-  width: 64%;
-  margin: auto;
-  overflow: hidden;
-  /*background-color: var(--grayscale-1);*/
   justify-content: space-between;
-  /*padding: 2%;*/
-
-  /*margin-top: var(--spacer-s);
-  position: relative;
-  left: 12vw;*/
+  overflow: hidden;
+  margin: var(--spacer-m);
 }
 
 .galleryNav a {
-  /*padding-bottom: var(--spacer-xs);*/
   font-weight: 600;
   font-size: var(--text-gnav);
   text-decoration: none;
@@ -100,20 +90,41 @@
 
 /* adjust navigation classes for larger mobile size */
 @media (min-width: 375px) {
-  .galleryNav {
-    /*margin-left: var(--spacer-m);*/
-    left: 0;
-  }
   .galleryNav a {
     font-weight: normal;
     color: var(--secondary-9);
   }
 }
 
+@media (min-width: 549px) {
+  .galleryNav {
+    margin: var(--spacer-l);
+  }
+}
+
+@media (min-width: 688px) {
+  .galleryNav {
+    margin: 60px;
+  }
+}
 /* adjust navigation classes for tablet size */
 @media (min-width: 768px) {
   .galleryNav {
-    /*margin-bottom: var(--spacer-s);*/
+    margin-top: 60px;
+    padding-left: var(--spacer-m);
+    padding-right: var(--spacer-m);
+  }
+}
+
+@media (min-width: 866px) {
+  .galleryNav {
+    margin: var(--spacer-l);
+  }
+}
+
+@media (min-width: 900px) {
+  .galleryNav {
+    margin: var(--spacer-ml);
   }
 }
 
@@ -131,15 +142,17 @@
   .nav {
     display: block;
     float: right;
+    margin-top: var(--spacer-s);
+    margin-right: var(--spacer-s);
   }
 
   .nav a {
-    color: inherit;
-    text-decoration: none;
-    font-weight: bold;
-    margin-right: 10px;
-    margin-top: var(--spacer-s);
     float: right;
+    margin-top: var(--spacer-s);
+    margin-right: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
   }
 
   .nav a:hover {
@@ -156,13 +169,10 @@
 
   .gallSideNav {
     display: block;
-    /*left: 10vw;
-    top: 20vh;*/
-    position: relative;
-    min-height: 70vh;
     min-width: 14%;
+    min-height: 70vh;
     float: left;
-    background-color: var(--secondary-1);
+    position: relative;
   }
 
   .gallSideNav li {

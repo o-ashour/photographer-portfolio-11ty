@@ -67,7 +67,6 @@
   background-color: #717161;
 }
 
-
 /* Faint animation */
 .fade {
   -webkit-animation-name: fade;
@@ -88,7 +87,6 @@
 
 /* adjust for tablet size */
 @media (min-width: 768px) {
-
   /* circles appear */
    .dots {
       cursor: pointer;
@@ -104,11 +102,6 @@
 
 /* adjust for laptop size */
 @media (min-width: 1025px) {
-    .slideshow-container {
-      /*max-width: 40vw;
-      height: auto;*/
-    }
-
     .MessageInfo {
       display: none;
     }

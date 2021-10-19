@@ -15,10 +15,18 @@ audio {
   border: 0;
 }
 
-html,
-body {
+html {
   margin: 0;
   height: 100%;
+  --maxwidth: 1440px;
+}
+
+body {
+  min-height: 98%;;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 var(--spacer-m);
 }
 
 h1,
