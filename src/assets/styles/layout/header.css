@@ -13,3 +13,9 @@
   float: left;
   margin-top: var(--spacer-m);
 }
+
+@media (min-width: 1440px) {
+  .header-logo {
+    width: 8vw;
+  }
+}

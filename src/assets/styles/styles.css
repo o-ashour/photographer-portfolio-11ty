@@ -2,14 +2,11 @@
 @import url("variables/v-color.css");
 @import url("variables/v-typography.css");
 @import url("variables/v-spacer.css");
-@import url("variables/v-grid.css");
 @import url("variables/v-zindex.css");
 
 /* Base */
 @import url("base/reset.css");
 @import url("base/typography.css");
-@import url("base/grid.css");
-@import url("base/grid-cols.css");
 
 /* Libraries */
 @import url("libraries/animate.css");

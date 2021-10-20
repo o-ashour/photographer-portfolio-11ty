@@ -118,7 +118,6 @@ main {
 
 /* adjust content classes for tablet size */
 @media (min-width: 768px) {
-
   main {
       margin-top: var(--spacer-s);
   }
@@ -168,15 +167,10 @@ main {
   ul {
     margin-top: var(--spacer-l);
   }
-  /*.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }*/
 
   /* containers */
   .galleryTxt {
-    max-width: 31vw;
+    max-width: 30vw;
     padding: 0 5%;
     margin-top: 10vh;
     margin-right: 0;

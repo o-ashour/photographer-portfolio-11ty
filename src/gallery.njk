@@ -1,5 +1,5 @@
 ---
-layout: layouts/gallery-base.njk
+layout: layouts/base.njk
 title: Gallery
 eleventyNavigation:
   key: gallery
@@ -79,7 +79,7 @@ eleventyNavigation:
      </div>
   </div>
 
-  <!-- using grids/grid-view to place main gallery text -->
+  <!-- main gallery text -->
    <div class="galleryTxt">
       <h2 class="text-subheader-gallery">Project 1</h2>
       <p class="text-body-gallery">Lorem ipsum dolor sit amet, consectetur
@@ -88,3 +88,13 @@ eleventyNavigation:
         ullamco laboris nisi ut aliquip ex ea commodo consequat.
       </p>
    </div>
+
+   <!-- gallery bottom horizontal navigation -->
+   <div class="galleryNav">
+     <a class="active" href="/gallery/">Project 1</a>
+     <a href="/gallery2/">Project 2</a>
+     <a href="/gallery3/">Project 3</a>
+   </div>
+
+   <!-- javascript for image carousel -->
+   <script src="/assets/scripts/carousel.js"></script>

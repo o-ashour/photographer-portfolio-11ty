@@ -12,7 +12,7 @@ p {
 
 /* headline classes */
 .text-headline {
-  margin-bottom: var(--spacer-s);
+  margin-bottom: var(--spacer-m);
   font-family: var(--font-1);
   font-size: var(--text-headline);
   font-weight: 300;
@@ -171,6 +171,7 @@ p {
   }
 }
 
+/*adjust for larger size, larger layout */
 @media (min-width: 1025px) {
   .text-subheader-gallery {
     margin-left: 0;
